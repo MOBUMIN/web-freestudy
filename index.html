@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title> Free web </title>
+    <style>
+        header{
+            position: fixed;
+            width:100%;
+            height:76px;
+            top:0; left:0;
+        }
+        .menu{
+            display:flex;
+            align-items: center; justify-content: center;
+            width: 100%; height: 100%;
+        }
+        .nav{
+            display:none;
+        }
+        #btn{
+            margin: 100px 100px 100px 100px;
+        }
+        .nav{
+            padding:0 15px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="action.js"></script>
+</head>
+<body>
+    <header>
+        <div class="menu" onmouseover="on_menu()" onmouseout="off_menu()">
+            <span class="menu-text">MENU</span>
+            <span class="nav">First</span>
+            <span class="nav">Second</span>
+        </div>
+    </header>
+</body>
