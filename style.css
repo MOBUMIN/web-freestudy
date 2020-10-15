@@ -1,0 +1,68 @@
+@font-face {
+font-family: 'UhBeeSe_hyun';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSe_hyun.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+    font-family: 'UhBeehyemong';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeehyemong.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+* {
+box-sizing: border-box;
+}
+body{ font-family: 'UhBeehyemong'; font-size: 30px; margin:0;}
+h1{ font-family: 'UhBeeSe_hyun'; }
+h2,h3,h4,h5,p{margin:0;}
+ul{ padding:0; }
+li{ list-style: none;}
+a{ text-decoration: none; color:black;}
+.navi{
+    position: fixed;
+    background-color: bisque;
+    width:300px;
+    height: 100%;
+    text-align: center;
+    overflow:auto;
+}
+.navi::-webkit-scrollbar{ display:none; }
+.content{
+    margin:0 50px 0 360px;
+    padding-top:5%;
+}
+.navi h1{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+/* h1 Animation */
+.navi h1:hover{
+    transform: scale(1.1);
+    color: #922bc2;
+}
+.navi h1:hover{
+    transition: all 0.7s ease;
+}
+
+.navi li:hover{
+    cursor: pointer;
+    background-color: burlywood;
+}
+.navi h1:hover{
+    cursor: default;
+}
+
+.box{
+    padding:20px;
+    border: 2px solid rgb(94, 94, 94);
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 1px rgb(94, 94, 94);
+    margin: auto;
+    margin-bottom: 30px;
+    transition: transform 0.5s;
+    transition-delay: 0.1s;
+}
+.box:hover {
+    transform: scale(1.08);
+  }

@@ -2,37 +2,33 @@
 <head>
     <meta charset="utf-8">
     <title> Free web </title>
-    <style>
-        header{
-            position: fixed;
-            width:100%;
-            height:76px;
-            top:0; left:0;
-        }
-        .menu{
-            display:flex;
-            align-items: center; justify-content: center;
-            width: 100%; height: 100%;
-        }
-        .nav{
-            display:none;
-        }
-        #btn{
-            margin: 100px 100px 100px 100px;
-        }
-        .nav{
-            padding:0 15px;
-        }
-    </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="action.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="menu" onmouseover="on_menu()" onmouseout="off_menu()">
-            <span class="menu-text">MENU</span>
-            <span class="nav">First</span>
-            <span class="nav">Second</span>
+    <!-- side bar  -->
+    <div class="navi">
+        <h1> 웹 공부를<br>해보자 </h1>
+        <hr noshade color="black" size="1">
+        <ul>
+            <a href="#first"><li>js 첫 적용</li></a>
+            <a href="#second"><li>두번째</li></a>
+            <a href="#third"><li>세번째</li></a>
+        </ul>
+    </div>
+    <!-- main -->
+    <div class="content">
+        <div class="box" id="first">
+            <h2>js 첫 적용</h1>
+            <p>내용 입력 예정</p>
         </div>
-    </header>
+        <div class="box" id="second">
+            <h2>두번째</h1>
+            <p>내용 입력 예정</p>
+        </div>
+        <div class="box" id="third">
+            <h2>세번째</h1>
+            <p>Navi 체험용 <br><br><br><br><br><br><br><br><br></p>
+        </div>
+    </div>
+    <!-- footer -->
 </body>
