@@ -20,7 +20,8 @@
         <p>마우스를 떼면 내용이 바뀜<br>
          jQuery를 이용하였다.
         </p>
-        <p class="code">function on_menu(){
+        <p class="code">&#60;script&#62;
+            function on_menu(){
             $('.mouse-off').css('display','none');
             $('.mouse-on').css('display','block');
         }
@@ -28,6 +29,11 @@
             $('.mouse-off').css('display','inline');
             $('.mouse-on').css('display','none');
         }
-    </p>
+        &#60;/script&#62;
+        </p>
+        <p class="code">&#60;body&#62;
+            &#60;div class="mouse-effect" onmouseover="on_menu()" onmouseout="off_menu()"&#62;
+        &#60;/body&#62;
+        </p>
     </div>
 </div>
