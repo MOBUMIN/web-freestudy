@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
 @font-face {
 font-family: 'UhBeeSe_hyun';
 src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSe_hyun.woff') format('woff');
@@ -13,7 +14,12 @@ font-style: normal;
 * {
 box-sizing: border-box;
 }
-body{ font-family: 'UhBeehyemong'; font-size: 30px; margin:0;}
+body{
+    font-family: 'UhBeehyemong';
+    font-size: 30px;
+    margin:0;
+    background-color:whitesmoke;
+}
 h1{ font-family: 'UhBeeSe_hyun'; }
 h2,h3,h4,h5,p{margin:0;}
 ul{ padding:0; }
@@ -39,7 +45,6 @@ a{ text-decoration: none; color:black;}
 /* h1 Animation */
 .navi h1:hover{
     transform: scale(1.1);
-    color: #922bc2;
 }
 .navi h1:hover{
     transition: all 0.7s ease;
@@ -54,6 +59,7 @@ a{ text-decoration: none; color:black;}
 }
 
 .box{
+    background-color: white;
     padding:20px;
     border: 2px solid rgb(94, 94, 94);
     border-radius: 10px;
@@ -66,3 +72,10 @@ a{ text-decoration: none; color:black;}
 .box:hover {
     transform: scale(1.08);
   }
+.footer{
+    margin:0 50px 0 360px;
+    padding: 2% 0;
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+    font-size:10px;
+}

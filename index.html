@@ -2,33 +2,23 @@
 <head>
     <meta charset="utf-8">
     <title> Free web </title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    <script src="indexAction.js"></script>
 </head>
 <body>
     <!-- side bar  -->
-    <div class="navi">
-        <h1> 웹 공부를<br>해보자 </h1>
-        <hr noshade color="black" size="1">
-        <ul>
-            <a href="#first"><li>js 첫 적용</li></a>
-            <a href="#second"><li>두번째</li></a>
-            <a href="#third"><li>세번째</li></a>
-        </ul>
-    </div>
+    <div id="header"></div>
     <!-- main -->
     <div class="content">
-        <div class="box" id="first">
-            <h2>js 첫 적용</h1>
-            <p>내용 입력 예정</p>
-        </div>
-        <div class="box" id="second">
-            <h2>두번째</h1>
-            <p>내용 입력 예정</p>
-        </div>
-        <div class="box" id="third">
-            <h2>세번째</h1>
-            <p>Navi 체험용 <br><br><br><br><br><br><br><br><br></p>
-        </div>
+        <div class="box" id="first"></div>
+        <div class="box" id="second"> </div>
+        <div class="box" id="third"> </div>
     </div>
     <!-- footer -->
+    <div class="footer" id="footer"></div>
 </body>
