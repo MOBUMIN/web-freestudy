@@ -1,2 +1,33 @@
-<h2>js 첫 적용</h1>
-<p>내용 입력 예정</p>
+<head>
+    <meta charset="utf-8">
+    <script>
+        function on_menu(){
+            $('.mouse-off').css('display','none');
+            $('.mouse-on').css('display','block');
+        }
+        function off_menu(){
+            $('.mouse-off').css('display','inline');
+            $('.mouse-on').css('display','none');
+        }
+    </script>
+</head>
+<div class="mouse-effect" onmouseover="on_menu()" onmouseout="off_menu()">
+    <h3>js 첫 적용</h3>
+    <div class="mouse-off">
+        <p>마우스를 가져다 대면 내용이 바뀜</p></div>
+    </p>
+    <div class="mouse-on" style="display:none">
+        <p>마우스를 떼면 내용이 바뀜<br>
+         jQuery를 이용하였다.
+        </p>
+        <p class="code">function on_menu(){
+            $('.mouse-off').css('display','none');
+            $('.mouse-on').css('display','block');
+        }
+        function off_menu(){
+            $('.mouse-off').css('display','inline');
+            $('.mouse-on').css('display','none');
+        }
+    </p>
+    </div>
+</div>

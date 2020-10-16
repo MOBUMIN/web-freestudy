@@ -1,17 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
-@font-face {
-font-family: 'UhBeeSe_hyun';
-src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeeSe_hyun.woff') format('woff');
-font-weight: normal;
-font-style: normal;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@font-face{
+    src:url("../font/Cafe24Oneprettynight.ttf");
+    font-family:"dangdang";
 }
-@font-face {
-    font-family: 'UhBeehyemong';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_five@.2.0/UhBeehyemong.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    }
-    
+@font-face{
+    src:url("../font/TmonMonsori.ttf.ttf");
+    font-family: "TmonMonsori";
+}
 * {
 box-sizing: border-box;
 }
@@ -19,25 +14,36 @@ html {
     scroll-behavior: smooth;
 }
 body{
-    font-family: 'UhBeehyemong';
+    font-family: "dangdang";
     font-size: 30px;
     margin:0;
     background-color:whitesmoke;
 }
-h1{ font-family: 'UhBeeSe_hyun'; }
-h2,h3,h4,h5,p{margin:0;}
+h1,h2,h3,h4,h5{ font-family: "TmonMonsori"; }
+h2,h3,h4,h5,p{margin: 0 0 10px 0;}
 ul{ padding:0; }
 li{ list-style: none;}
 a{ text-decoration: none; color:black;}
+code{
+    white-space: pre-line;
+    font-family: 'Open Sans', sans-serif;
+    font-size: small;
+    margin-bottom: 10px;
+}
 .navi{
     position: fixed;
-    background-color: bisque;
+    background-color: #4c4c4c;
+    color:whitesmoke;
     width:300px;
     height: 100%;
     text-align: center;
     overflow:auto;
 }
 .navi::-webkit-scrollbar{ display:none; }
+.navi li{
+    padding:10px 0;
+    font-size: 20px;
+}
 .content{
     margin:0 50px 0 360px;
     padding-top:5%;
@@ -46,9 +52,13 @@ a{ text-decoration: none; color:black;}
     margin-bottom: 10px;
     padding-bottom: 20px;
 }
+.navi a{
+    color:whitesmoke;
+}
 /* h1 Animation */
 .navi h1:hover{
     transform: scale(1.1);
+    color:wheat;
 }
 .navi h1:hover{
     transition: all 0.7s ease;
@@ -56,15 +66,19 @@ a{ text-decoration: none; color:black;}
 
 .navi li:hover{
     cursor: pointer;
-    background-color: burlywood;
+    background-color:rgb(255, 242, 218);
+    color:black
 }
 .navi h1:hover{
     cursor: default;
 }
 
+.content{
+    font-size: 25px;
+}
 .box{
     background-color: white;
-    padding:20px;
+    padding:20px 20px 10px 20px;
     border: 2px solid rgb(94, 94, 94);
     border-radius: 10px;
     box-shadow: 1px 1px 2px 1px rgb(94, 94, 94);
@@ -75,11 +89,21 @@ a{ text-decoration: none; color:black;}
 }
 .box:hover {
     transform: scale(1.08);
-  }
+}
+.code{
+    display: inline-block;
+    background-color: #4c4c4c;
+    color:whitesmoke;
+    white-space: pre-line;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding:15px;
+}
 .footer{
     margin:0 50px 0 360px;
     padding: 2% 0;
     text-align: center;
-    font-family: 'Krona One', sans-serif;
-    font-size:10px;
+    font-family:"dangdang";
+    font-size:15px;
 }
