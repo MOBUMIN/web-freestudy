@@ -30,6 +30,10 @@ code{
     font-size: small;
     margin-bottom: 10px;
 }
+input{
+    font-family: "dangdang";
+    font-size: 20px;
+}
 .navi{
     position: fixed;
     background-color: #4c4c4c;

@@ -1,11 +1,86 @@
-<h3>두번째</h3>
-    <p>세번쨰</p>
-    <p>세번쨰</p>
-    <p>세번쨰</p>
-    <p>세번쨰</p>
-    <p>세번쨰</p>
-    <p>세번쨰</p>
-    <p>세번쨰</p>
-    <p>세번쨰</p>
-    <p>세번쨰</p>
-    
+<script>
+    $(function(){
+        $('.slider').slick({
+            infinite:true,
+            slidesToShow: 1,
+            slidestoScroll:1,
+            arrows:true,
+            dots:true,
+            prevArrow:"<button type='button' class='slick-prev'>Previous</button>",
+            nextArrow:"<button type='button' class='slick-next'>Next</button>",
+            dotsClass:"slick-dots",
+            vertical:false,
+        });
+        $('.slider').on('wheel', function(e){e.preventDefault();
+        if(e.originalEvent.deltaY>0){
+            $(this).slick('slickNext');
+        } else{ $(this).slick('slickPrev');}
+        })
+    })
+    function secondCode_click(){
+        var code = $('.second-code');
+        var btn = $('#second-code-btn');
+        if(btn.val()=='코드보기'){
+        code.css('display','block');
+        btn.val('닫기');
+        }
+        else{
+            code.css('display','none');
+            btn.val('코드보기');
+        }
+    }
+</script>
+<style>
+    .slider{ margin-top:15px;}
+    .slick-prev:before, .slick-next:before{
+        color:black;
+    }
+</style>
+
+<h3> Slick.js </h3>
+<input type="button" id="second-code-btn" onclick="secondCode_click()" value="코드보기">
+<div class="slider" style="text-align: center;">
+    <p>SLICK</p>
+    <p>DSC 웹에서는 왜 안 돼</p>
+    <p>여기서는 또 되네</p>
+    <p>참 이상하죠..</p>
+    <p>그래도 좋네요</p>
+</div>
+<p style="margin-top:40px;"> 마우스 휠도 지원합니다. </p>
+<div class="second-code" style="display: none;">
+    <p class="code">&#60;script&#62;
+        $(function(){
+            $('.slider').slick({
+                infinite:true,
+                slidesToShow: 1,
+                slidestoScroll:1,
+                arrows:true,
+                dots:true,
+                prevArrow:"&#60;button type='button' class='slick-prev'&#62;Previous&#60;/button&#62;",
+                nextArrow:"&#60;button type='button' class='slick-next'&#62;Next&#60;/button&#62;",
+                dotsClass:"slick-dots",
+                vertical:false,
+            });
+            $('.slider').on('wheel', function(e){e.preventDefault();
+            if(e.originalEvent.deltaY>0){
+                $(this).slick('slickNext');
+            } else{ $(this).slick('slickPrev');}
+            })
+        })</p>
+    <p class="code">&#60;style&#62;
+        .slider{ margin-top:15px;}
+        .slick-prev:before, .slick-next:before{
+            color:black;
+        }
+        &#60;/style&#62;
+    </p>
+    <p class="code">&#60;body&#62;
+        &#60;div class="slider" style="text-align: center;"&#62;
+            &#60;p&#62;SLICK&#60;/p&#62;
+            &#60;p&#62;DSC 웹에서는 왜 안 돼&#60;/p&#62;
+            &#60;p&#62;여기서는 또 되네&#60;/p&#62;
+            &#60;p&#62;참 이상하죠..&#60;/p&#62;
+            &#60;p&#62;그래도 좋네요&#60;/p&#62;
+        &#60;/div&#62;
+    </p>
+</div>
